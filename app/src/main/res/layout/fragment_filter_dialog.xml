@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/filters_title"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:textSize="18dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="16dp">
+            <TextView
+                android:id="@+id/tvBeginDateLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/label"
+                android:text="Begin Date :"
+                android:gravity="center_vertical"
+                android:layout_alignTop="@+id/tvBeginDateValue"
+                android:layout_alignBottom="@+id/tvBeginDateValue"/>
+
+            <TextView
+                android:id="@+id/tvBeginDateValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/value"
+                android:textColor="#1e90ff"
+                tools:text="1/2/2009"
+                android:text="@string/set_begin_date"
+                android:layout_toRightOf="@id/tvBeginDateLabel"
+                android:layout_toLeftOf="@+id/ivClearBeginDate"/>
+
+            <ImageView
+                android:id="@+id/ivClearBeginDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/close"
+                android:scaleType="fitCenter"
+                android:layout_alignParentRight="true"
+                android:padding="3dp"
+                android:gravity="center_vertical"
+                android:layout_alignTop="@+id/tvBeginDateValue"
+                android:layout_alignBottom="@+id/tvBeginDateValue"/>
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                style="@style/divider"
+                android:layout_below="@id/tvBeginDateLabel"/>
+
+            <TextView
+                android:id="@+id/tvEndDateLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/label"
+                android:text="End Date :"
+                android:gravity="center_vertical"
+                android:layout_below="@+id/divider1"
+                android:layout_alignTop="@+id/tvEndDateValue"
+                android:layout_alignBottom="@+id/tvEndDateValue"/>
+
+            <TextView
+                android:id="@+id/tvEndDateValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/value"
+                android:textColor="#1e90ff"
+                tools:text="1/2/2009"
+                android:text="@string/set_end_date"
+                android:layout_below="@+id/divider1"
+                android:layout_toRightOf="@id/tvEndDateLabel"
+                android:layout_toLeftOf="@+id/ivClearEndDate"/>
+
+            <ImageView
+                android:id="@+id/ivClearEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/close"
+                android:scaleType="fitCenter"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tvEndDateValue"
+                android:layout_alignBottom="@+id/tvEndDateValue"/>
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                style="@style/divider"
+                android:layout_below="@id/tvEndDateLabel"/>
+
+            <TextView
+                android:id="@+id/tvOrderLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/label"
+                android:gravity="center_vertical"
+                android:text="@string/sort_order"
+                android:layout_below="@+id/divider2"
+                android:layout_alignTop="@+id/spOrder"
+                android:layout_alignBottom="@+id/spOrder"/>
+
+            <Spinner
+                android:id="@+id/spOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="100dp"
+                android:entries="@array/order_array"
+                android:layout_below="@+id/divider2"
+                android:padding="5dp"
+                android:layout_toRightOf="@id/tvOrderLabel"/>
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                style="@style/divider"
+                android:layout_below="@id/tvOrderLabel"/>
+
+            <TextView
+                android:id="@+id/tvNewsDeskLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/label"
+                android:text="@string/news_desk_labels"
+                android:layout_below="@+id/divider3"
+                android:layout_alignTop="@+id/llNewsDeskContainer"
+                android:layout_alignBottom="@+id/llNewsDeskContainer"/>
+
+            <LinearLayout
+                android:id="@+id/llNewsDeskContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider3"
+                android:orientation="vertical"
+                android:layout_toRightOf="@id/tvNewsDeskLabel">
+
+                <CheckBox
+                    android:id="@+id/cbArt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/news_desk_art"
+                    android:padding="8dp"/>
+
+                <CheckBox
+                    android:id="@+id/cbFasion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/news_desk_fasion_amp_style"
+                    android:padding="8dp"/>
+
+                <CheckBox
+                    android:id="@+id/cbSports"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/news_desk_sports"
+                    android:padding="8dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llNewsDeskContainer"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/filter_cancel"/>
+        <Button
+            android:id="@+id/saved"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/filter_save"/>
+    </LinearLayout>
+</LinearLayout>

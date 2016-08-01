@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">NYTReader</string>
+    <string name="empty_list_string">Tap here to discover your favorite topics!</string>
+    <string name="article_image_content_description">Article Image</string>
+    <string name="sort_order">Sort Order :</string>
+    <string name="news_desk_labels">News Desk \nLabels:</string>
+    <string name="news_desk_fasion_amp_style"><![CDATA[Fasion & style]]></string>
+    <string name="news_desk_sports">Sports</string>
+    <string name="news_desk_art">Art</string>
+    <string name="filter_cancel">Cancel</string>
+    <string name="filter_save">Save</string>
+    <string name="title_new_york_times_reader">New York Times</string>
+    <string name="set_end_date">Set end date</string>
+    <string name="set_begin_date">Set begin date</string>
+    <string name="share_title">Share</string>
+    <string name="share_check_story">"Check out the story at: "</string>
+    <string name="menu_title_share">Share</string>
+    <string name="filters_title">Filters</string>
+    <string name="search_hint">Search</string>
+    <string name="no_filters_changed_message">No filters has been changed</string>
+    <string name="no_network_connection">No network connection, please check your connectivity.
+    </string>
+    <string name="no_content_found">No content found for \"</string>
+</resources>

@@ -48,7 +48,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![Screen Shot](.screenshot "App Screenshot")
+![Screen Shot](screenshot.png "App Screenshot")
 
 [NYT Reader Youtube](https://github.com/google/gson)
 
